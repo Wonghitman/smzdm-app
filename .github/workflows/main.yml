@@ -24,4 +24,4 @@ jobs:
          sk: ${{ secrets.SK }}
          token: ${{ secrets.TOKEN }}
         run: |
-          python index.py
+          python .\index.py
