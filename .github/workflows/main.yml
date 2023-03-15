@@ -24,4 +24,4 @@ jobs:
     steps:
       - name: Working
         run: |
-          python /smzdm-app/index.py
+          python ./index.py
