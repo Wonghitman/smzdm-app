@@ -14,13 +14,13 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
-    container:
-      env:
-        cookie: ${{ secrets.COOKIE }}
-        sk: ${{ secrets.SK }}
-        token: ${{ secrets.TOKEN }}
 
     steps:
+
       - name: Working
+        env:
+         cookie: ${{ secrets.COOKIE }}
+         sk: ${{ secrets.SK }}
+         token: ${{ secrets.TOKEN }}
         run: |
           python index.py
