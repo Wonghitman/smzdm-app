@@ -13,11 +13,13 @@ on:
 
 jobs:
   run:
+    
     runs-on: ubuntu-latest
 
     steps:
 
       - name: Working
+        uses: ./
         env:
          cookie: ${{ secrets.COOKIE }}
          sk: ${{ secrets.SK }}
